@@ -13,11 +13,11 @@
 
 <br/>
 
-I maintain the server cluster, firewall/network stack, and internal web & mobile platforms for the Department of Computer Science at KMITL (**[CSNIS](https://github.com/CSNIS-CSKmitl)**) — from physical virtualization and VLAN routing up to the apps students and staff use every day.
+I maintain the server cluster, firewall/network stack, and internal web & mobile platforms for the Department of Computer Science at KMITL (**[CSNIS](https://github.com/CSNIS-CSKmitl)**), covering virtualization, VLAN routing, and the services students and staff use every day.
 
 ---
 
-### 🏛️ CS KMITL / CSNIS Production Ecosystem
+### CS KMITL / CSNIS Production Ecosystem
 
 All department platforms share a unified **PocketBase + KMITL OIDC** single sign-on core and run across our internal **Proxmox VE** cluster:
 
@@ -74,7 +74,7 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
 
 ---
 
-### 🌐 Infrastructure & Network Operations
+### Infrastructure & Network Operations
 
 <table>
   <tr>
@@ -101,7 +101,7 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
 
 ---
 
-### 🧪 Other Projects & Experiments
+### Other Projects & Experiments
 
 <table>
   <tr>
@@ -120,7 +120,7 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
     <td width="50%" valign="top">
       <b><a href="https://github.com/techasit5415/StudentManagement">StudentManagement</a> & <a href="https://github.com/techasit5415/StudentManagement_backend">Backend</a></b><br/>
       <sub>Android app for student records backed by a Python FastAPI + PostgreSQL REST API (plus <a href="https://github.com/techasit5415/std-regis">std-regis</a>).</sub><br/><br/>
-      <code>Kotlin</code> <code>FastAPI</code> <code>PostgreSQL</code>
+      <code>Kotlin</code> <code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code>
     </td>
     <td width="50%" valign="top">
       <b><a href="https://github.com/techasit5415/Pet">Desktop Pet (Kirby)</a></b><br/>
@@ -128,15 +128,27 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
       <code>C#</code> <code>.NET 8</code> <code>WPF</code> <code>Win32 API</code>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/web-datamining">web-datamining</a> & <a href="https://github.com/techasit5415/sales_dashboard">sales_dashboard</a></b><br/>
+      <sub>Web scraping, data mining pipelines, and interactive analytics dashboard projects.</sub><br/><br/>
+      <code>Python</code> <code>Data Analysis</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/twocarsG">twocarsG</a> / <a href="https://github.com/techasit5415/MVC2025">MVC2025</a> / <a href="https://github.com/techasit5415/ComSci">ComSci</a></b><br/>
+      <sub>Object-oriented programming, MVC architecture coursework, and 2D game projects written in Java.</sub><br/><br/>
+      <code>Java</code> <code>OOP</code> <code>MVC</code>
+    </td>
+  </tr>
 </table>
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 <div align="center">
 
-[![Skills](https://skillicons.dev/icons?i=linux,docker,nginx,grafana,githubactions,svelte,ts,js,nodejs,py,fastapi,postgres,kotlin,androidstudio,cs,dotnet&perline=8)](https://github.com/techasit5415)
+[![Skills](https://skillicons.dev/icons?i=linux,docker,nginx,grafana,githubactions,svelte,ts,js,nodejs,py,fastapi,postgres,java,kotlin,cs,dotnet&perline=8)](https://github.com/techasit5415)
 
 <br/>
 
@@ -147,6 +159,8 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
 [![Syslog-ng](https://img.shields.io/badge/Syslog--ng-18181b?style=flat&logo=linux&logoColor=FCC624)](https://www.syslog-ng.com/)
 [![PocketBase](https://img.shields.io/badge/PocketBase-18181b?style=flat&logo=pocketbase&logoColor=B8DBE4)](https://pocketbase.io/)
 [![PM2](https://img.shields.io/badge/PM2-18181b?style=flat&logo=pm2&logoColor=2B037A)](https://pm2.keymetrics.io/)
+[![Python](https://img.shields.io/badge/Python-18181b?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/)
+[![Java](https://img.shields.io/badge/Java-18181b?style=flat&logo=openjdk&logoColor=ED8B00)](https://openjdk.org/)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-18181b?style=flat&logo=jetpackcompose&logoColor=4285F4)](https://developer.android.com/compose)
 
 </div>
