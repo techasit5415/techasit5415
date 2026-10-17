@@ -1,60 +1,156 @@
+<div align="center">
+
 # Techasit Vanitpattarakul
 
-CS student at **KMITL** working on department infrastructure, network systems, and internal web/mobile platforms under [**CSNIS-CSKmitl**](https://github.com/CSNIS-CSKmitl).
+**Computer Science @ KMITL** · Infrastructure, Networking & Full-Stack Systems
 
-Most of my time goes into running our Proxmox cluster, OPNsense firewall/network stack, and building tools used by students and staff in the department.
+[![CSNIS Org](https://img.shields.io/badge/CSNIS--CSKmitl-18181b?style=flat&logo=github&logoColor=white)](https://github.com/CSNIS-CSKmitl)
+[![CSNIS Portal](https://img.shields.io/badge/csnis.cskmitl.com-18181b?style=flat&logo=svelte&logoColor=FF3E00)](https://csnis.cskmitl.com)
+[![init.d](https://img.shields.io/badge/init--d.cskmitl.com-18181b?style=flat&logo=proxmox&logoColor=E57000)](https://init-d.cskmitl.com)
+[![CS KMITL](https://img.shields.io/badge/CS_KMITL-E35205?style=flat)](https://www.cs.kmitl.ac.th/)
 
-### CS KMITL / CSNIS Projects ([GitHub Org](https://github.com/CSNIS-CSKmitl))
+</div>
 
-* [**init.d**](https://github.com/CSNIS-CSKmitl/init.d) ([init-d.cskmitl.com](https://init-d.cskmitl.com)) - Self-service VM \& LXC provisioning platform on Proxmox VE with Web SSH and NoVNC console
-* [**csnis**](https://github.com/CSNIS-CSKmitl/csnis) ([csnis.cskmitl.com](https://csnis.cskmitl.com)) - Department network portal, service catalog, and live topology map
-* [**Printer-server**](https://github.com/CSNIS-CSKmitl/Printer-server) ([printer.cskmitl.com](https://printer.cskmitl.com)) - Web print queue and page quota management hooked into Ubuntu CUPS
-* [**Booking**](https://github.com/CSNIS-CSKmitl/Booking) ([booking.cskmitl.com](https://booking.cskmitl.com)) - Lab and meeting room reservation system
-* [**brrow-item (Borrowly)**](https://github.com/CSNIS-CSKmitl/brrow-item) ([req.cskmitl.com](https://req.cskmitl.com)) - Department hardware \& equipment borrowing system
-* [**Announcements**](https://github.com/CSNIS-CSKmitl/Announcements) ([announcements.cskmitl.com](https://announcements.cskmitl.com)) - Central announcement hub broadcasting across department web and mobile services
-* [**AuthWeb**](https://github.com/techasit5415/AuthWeb) - KMITL WiFi authentication portal with Google OAuth and automated OPNsense voucher generation
-* **Network, Firewall \& OpenVPN** - Department network segmentation (802.1Q VLANs), **OpenVPN** remote access gateway routed into internal VM subnets, DNS/DHCP, and centralized logging (Syslog / Promtail / Loki / Grafana) for Thai Computer Crime Act  compliance
-* **CS KMITL Mobile** - Android client (Kotlin / Jetpack Compose) + Node/Python FCM push relay backed by PocketBase \& KMITL OIDC
+<br/>
 
-### Other Repos \& Experiments
+I maintain the server cluster, firewall/network stack, and internal web & mobile platforms for the Department of Computer Science at KMITL (**[CSNIS](https://github.com/CSNIS-CSKmitl)**) — from physical virtualization and VLAN routing up to the apps students and staff use every day.
 
-* [**pdf-layout-analyzer**](https://github.com/techasit5415/pdf-layout-analyzer) - Python CLI tool for checking PDF page margins, fonts, and layout against academic report rules
-* [**AI-LLM**](https://github.com/techasit5415/AI-LLM) **/** [**Ai-Rag**](https://github.com/techasit5415/Ai-Rag) - Local LLM \& RAG chatbot experiments running with GPU acceleration
-* [**StudentManagement**](https://github.com/techasit5415/StudentManagement) **\&** [**Backend**](https://github.com/techasit5415/StudentManagement_backend) - Kotlin Android app paired with a Python FastAPI + PostgreSQL backend (plus [std-regis](https://github.com/techasit5415/std-regis))
-* [**Pet**](https://github.com/techasit5415/Pet) - Pixel-art Kirby desktop pet for Windows written in C# / WPF without external image assets
-* [**web-datamining**](https://github.com/techasit5415/web-datamining) **\&** [**sales\_dashboard**](https://github.com/techasit5415/sales_dashboard) - Data scraping, analysis, and dashboard coursework in Python
+---
 
-### Stack & Tools
+### 🏛️ CS KMITL / CSNIS Production Ecosystem
 
-**Infra & Network**  
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://www.kernel.org/)
-[![Proxmox VE](https://img.shields.io/badge/Proxmox_VE-E57000?style=flat-square&logo=proxmox&logoColor=white)](https://www.proxmox.com/)
-[![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white)](https://opnsense.org/)
-[![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)](https://openvpn.net/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)](https://nginx.org/)
-[![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white)](https://pm2.keymetrics.io/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+All department platforms share a unified **PocketBase + KMITL OIDC** single sign-on core and run across our internal **Proxmox VE** cluster:
 
-**Monitoring & Logs**  
-[![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)](https://grafana.com/)
-[![Grafana Loki](https://img.shields.io/badge/Loki_&_Promtail-F46800?style=flat-square&logo=grafana&logoColor=white)](https://grafana.com/oss/loki/)
-[![Syslog](https://img.shields.io/badge/Syslog--ng-00A98F?style=flat-square&logo=linux&logoColor=white)](https://www.syslog-ng.com/)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/init.d">init.d</a></b> · <a href="https://init-d.cskmitl.com"><code>init-d.cskmitl.com ↗</code></a><br/>
+      <sub>Self-service VM & LXC provisioning portal on Proxmox VE with integrated Web SSH and NoVNC console access.</sub><br/><br/>
+      <code>SvelteKit</code> <code>Node.js</code> <code>Proxmox API</code> <code>PocketBase</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/csnis">CSNIS Portal</a></b> · <a href="https://csnis.cskmitl.com"><code>csnis.cskmitl.com ↗</code></a><br/>
+      <sub>Department network portal, service directory, and interactive live network topology map.</sub><br/><br/>
+      <code>Svelte 5</code> <code>SvelteKit</code> <code>Tailwind</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/Printer-server">Printer Server</a></b> · <a href="https://printer.cskmitl.com"><code>printer.cskmitl.com ↗</code></a><br/>
+      <sub>Web print queue, automated PDF page counting, and student print quota system hooked into Ubuntu CUPS.</sub><br/><br/>
+      <code>SvelteKit</code> <code>TypeScript</code> <code>CUPS</code> <code>PocketBase</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/Booking">Room Booking</a></b> · <a href="https://booking.cskmitl.com"><code>booking.cskmitl.com ↗</code></a><br/>
+      <sub>Computer lab and meeting room reservation platform with real-time schedule conflict detection.</sub><br/><br/>
+      <code>Svelte 5</code> <code>SvelteKit</code> <code>PocketBase</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/brrow-item">Borrowly</a></b> · <a href="https://req.cskmitl.com"><code>req.cskmitl.com ↗</code></a><br/>
+      <sub>Hardware & lab equipment borrowing system with stock tracking and two-stage approval workflows.</sub><br/><br/>
+      <code>Svelte</code> <code>Vite</code> <code>Node.js</code> <code>PocketBase</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/Announcements">Announcements</a></b> · <a href="https://announcements.cskmitl.com"><code>announcements.cskmitl.com ↗</code></a><br/>
+      <sub>Central broadcast hub delivering targeted pop-ups across department web services and push notifications to mobile.</sub><br/><br/>
+      <code>Svelte 5</code> <code>SvelteKit</code> <code>PocketBase</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/AuthWeb">AuthWeb</a></b> · <code>Captive Portal</code><br/>
+      <sub>KMITL WiFi authentication portal with Google OAuth and automated voucher generation via the OPNsense API.</sub><br/><br/>
+      <code>TypeScript</code> <code>OPNsense API</code> <code>OAuth 2.0</code>
+    </td>
+    <td width="50%" valign="top">
+      <b>CS KMITL Mobile & Push Gateway</b> · <code>hub-api.cskmitl.com</code><br/>
+      <sub>Unified Android client paired with an SSE realtime proxy and Python FCM push notification relay.</sub><br/><br/>
+      <code>Kotlin</code> <code>Jetpack Compose</code> <code>Python</code> <code>FCM</code>
+    </td>
+  </tr>
+</table>
 
-**Web & Backend**  
-[![SvelteKit](https://img.shields.io/badge/Svelte_/_SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)](https://svelte.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![PocketBase](https://img.shields.io/badge/PocketBase-B8DBE4?style=flat-square&logo=pocketbase&logoColor=black)](https://pocketbase.io/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+---
 
-**Mobile & Desktop**  
-[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
-[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://openjdk.org/)
-[![.NET / WPF](https://img.shields.io/badge/C%23_/_WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+### 🌐 Infrastructure & Network Operations
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Virtualization & Compute</b><br/>
+      <sub>Multi-node <b>Proxmox VE</b> cluster running KVM virtual machines and LXC containers for production apps and student workloads.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <b>Network, Firewall & OpenVPN</b><br/>
+      <sub><b>OPNsense</b> routing 10+ 802.1Q VLANs, NAT, Dnsmasq DNS/DHCP, Captive Portal, and <b>OpenVPN</b> remote access into internal VM subnets.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Observability & Compliance Logging</b><br/>
+      <sub>Centralized <b>Syslog-ng + Promtail + Loki + Grafana</b> pipeline archiving firewall, NAT, DNS, and DHCP logs for Thai Computer Crime Act compliance.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <b>CI/CD & Runtime</b><br/>
+      <sub>Self-hosted <b>GitHub Actions</b> Linux runners with automated build, SSH artifact delivery, and health-verified <b>PM2 / Docker</b> deployments behind <b>Nginx</b>.</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🧪 Other Projects & Experiments
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/pdf-layout-analyzer">pdf-layout-analyzer</a></b><br/>
+      <sub>CLI utility that audits PDF page margins, typography, and layout structure against academic report formatting standards.</sub><br/><br/>
+      <code>Python</code> <code>CLI</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/AI-LLM">AI-LLM</a> / <a href="https://github.com/techasit5415/Ai-Rag">Ai-Rag</a></b><br/>
+      <sub>Local LLM-powered Retrieval-Augmented Generation (RAG) chatbot running with GPU acceleration.</sub><br/><br/>
+      <code>Python</code> <code>Local LLM</code> <code>RAG</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/StudentManagement">StudentManagement</a> & <a href="https://github.com/techasit5415/StudentManagement_backend">Backend</a></b><br/>
+      <sub>Android app for student records backed by a Python FastAPI + PostgreSQL REST API (plus <a href="https://github.com/techasit5415/std-regis">std-regis</a>).</sub><br/><br/>
+      <code>Kotlin</code> <code>FastAPI</code> <code>PostgreSQL</code>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/techasit5415/Pet">Desktop Pet (Kirby)</a></b><br/>
+      <sub>Multi-monitor pixel-art Kirby desktop pet for Windows rendered purely in code without external image assets.</sub><br/><br/>
+      <code>C#</code> <code>.NET 8</code> <code>WPF</code> <code>Win32 API</code>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Tech Stack
+
+<div align="center">
+
+[![Skills](https://skillicons.dev/icons?i=linux,docker,nginx,grafana,githubactions,svelte,ts,js,nodejs,py,fastapi,postgres,kotlin,androidstudio,cs,dotnet&perline=8)](https://github.com/techasit5415)
+
+<br/>
+
+[![Proxmox VE](https://img.shields.io/badge/Proxmox_VE-18181b?style=flat&logo=proxmox&logoColor=E57000)](https://www.proxmox.com/)
+[![OPNsense](https://img.shields.io/badge/OPNsense-18181b?style=flat&logo=opnsense&logoColor=D94F00)](https://opnsense.org/)
+[![OpenVPN](https://img.shields.io/badge/OpenVPN-18181b?style=flat&logo=openvpn&logoColor=EA7E20)](https://openvpn.net/)
+[![Grafana Loki](https://img.shields.io/badge/Grafana_Loki_&_Promtail-18181b?style=flat&logo=grafana&logoColor=F46800)](https://grafana.com/oss/loki/)
+[![Syslog-ng](https://img.shields.io/badge/Syslog--ng-18181b?style=flat&logo=linux&logoColor=FCC624)](https://www.syslog-ng.com/)
+[![PocketBase](https://img.shields.io/badge/PocketBase-18181b?style=flat&logo=pocketbase&logoColor=B8DBE4)](https://pocketbase.io/)
+[![PM2](https://img.shields.io/badge/PM2-18181b?style=flat&logo=pm2&logoColor=2B037A)](https://pm2.keymetrics.io/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-18181b?style=flat&logo=jetpackcompose&logoColor=4285F4)](https://developer.android.com/compose)
+
+</div>
+
+
 
 
