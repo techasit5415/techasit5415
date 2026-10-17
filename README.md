@@ -24,10 +24,37 @@ Most of my time goes into running our Proxmox cluster, OPNsense firewall/network
 * [**Pet**](https://github.com/techasit5415/Pet) - Pixel-art Kirby desktop pet for Windows written in C# / WPF without external image assets
 * [**web-datamining**](https://github.com/techasit5415/web-datamining) **\&** [**sales\_dashboard**](https://github.com/techasit5415/sales_dashboard) - Data scraping, analysis, and dashboard coursework in Python
 
-### Stack \& Tools
+### Stack & Tools
 
-* **Infra \& Network:** Linux, Proxmox VE (KVM / LXC), OPNsense (VLAN, Firewall, NAT, Captive Portal), OpenVPN, Docker, Nginx, PM2, GitHub Actions
-* **Monitoring:** Grafana, Loki, Promtail, Syslog
-* **Web \& Backend:** Svelte / SvelteKit, TypeScript / JavaScript, Node.js, PocketBase, Python (FastAPI), PostgreSQL
-* **Mobile \& Desktop:** Kotlin (Jetpack Compose), Java, C# (.NET / WPF)
+**Infra & Network**  
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://www.kernel.org/)
+[![Proxmox VE](https://img.shields.io/badge/Proxmox_VE-E57000?style=flat-square&logo=proxmox&logoColor=white)](https://www.proxmox.com/)
+[![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white)](https://opnsense.org/)
+[![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)](https://openvpn.net/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)](https://nginx.org/)
+[![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white)](https://pm2.keymetrics.io/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+
+**Monitoring & Logs**  
+[![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)](https://grafana.com/)
+[![Grafana Loki](https://img.shields.io/badge/Loki_&_Promtail-F46800?style=flat-square&logo=grafana&logoColor=white)](https://grafana.com/oss/loki/)
+[![Syslog](https://img.shields.io/badge/Syslog--ng-00A98F?style=flat-square&logo=linux&logoColor=white)](https://www.syslog-ng.com/)
+
+**Web & Backend**  
+[![SvelteKit](https://img.shields.io/badge/Svelte_/_SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)](https://svelte.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![PocketBase](https://img.shields.io/badge/PocketBase-B8DBE4?style=flat-square&logo=pocketbase&logoColor=black)](https://pocketbase.io/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+**Mobile & Desktop**  
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)](https://developer.android.com/compose)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![.NET / WPF](https://img.shields.io/badge/C%23_/_WPF-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+
 
