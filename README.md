@@ -7,13 +7,14 @@
 [![CSNIS Org](https://img.shields.io/badge/CSNIS--CSKmitl-18181b?style=flat&logo=github&logoColor=white)](https://github.com/CSNIS-CSKmitl)
 [![CSNIS Portal](https://img.shields.io/badge/csnis.cskmitl.com-18181b?style=flat&logo=svelte&logoColor=FF3E00)](https://csnis.cskmitl.com)
 [![init.d](https://img.shields.io/badge/init--d.cskmitl.com-18181b?style=flat&logo=proxmox&logoColor=E57000)](https://init-d.cskmitl.com)
+[![CS Colab](https://img.shields.io/badge/colab.cskmitl.com-18181b?style=flat&logo=jupyter&logoColor=F37626)](https://colab.cskmitl.com)
 [![CS KMITL](https://img.shields.io/badge/CS_KMITL-E35205?style=flat)](https://www.cs.kmitl.ac.th/)
 
 </div>
 
 <br/>
 
-I maintain the server cluster, firewall/network stack, and internal web & mobile platforms for the Department of Computer Science at KMITL (**[CSNIS](https://github.com/CSNIS-CSKmitl)**), covering virtualization, VLAN routing, and the services students and staff use every day.
+I maintain the server cluster, firewall/network stack, storage infrastructure, and internal web & mobile platforms for the Department of Computer Science at KMITL (**[CSNIS](https://github.com/CSNIS-CSKmitl)**), covering virtualization, VLAN routing, and the services students and staff use every day.
 
 ---
 
@@ -36,26 +37,38 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <b><a href="https://colab.cskmitl.com">CS Colab</a></b> · <a href="https://colab.cskmitl.com"><code>colab.cskmitl.com ↗</code></a><br/>
+      <sub>Multi-user containerized JupyterLab environment with NVIDIA RTX A2000 GPU pass-through, KMITL IAM SSO, and Colab-style automated idle resource culling.</sub><br/><br/>
+      <code>JupyterHub</code> <code>DockerSpawner</code> <code>NVIDIA CUDA</code> <code>PocketBase</code> <code>Python</code>
+    </td>
+    <td width="50%" valign="top">
       <b><a href="https://github.com/CSNIS-CSKmitl/Printer-server">Printer Server</a></b> · <a href="https://printer.cskmitl.com"><code>printer.cskmitl.com ↗</code></a><br/>
       <sub>Web print queue, automated PDF page counting, and student print quota system hooked into Ubuntu CUPS.</sub><br/><br/>
       <code>SvelteKit</code> <code>TypeScript</code> <code>CUPS</code> <code>PocketBase</code>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/CSNIS-CSKmitl/Booking">Room Booking</a></b> · <a href="https://booking.cskmitl.com"><code>booking.cskmitl.com ↗</code></a><br/>
       <sub>Computer lab and meeting room reservation platform with real-time schedule conflict detection.</sub><br/><br/>
       <code>Svelte 5</code> <code>SvelteKit</code> <code>PocketBase</code>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/CSNIS-CSKmitl/brrow-item">Borrowly</a></b> · <a href="https://req.cskmitl.com"><code>req.cskmitl.com ↗</code></a><br/>
       <sub>Hardware & lab equipment borrowing system with stock tracking and two-stage approval workflows.</sub><br/><br/>
       <code>Svelte</code> <code>Vite</code> <code>Node.js</code> <code>PocketBase</code>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <b><a href="https://github.com/CSNIS-CSKmitl/Announcements">Announcements</a></b> · <a href="https://announcements.cskmitl.com"><code>announcements.cskmitl.com ↗</code></a><br/>
       <sub>Central broadcast hub delivering targeted pop-ups across department web services and push notifications to mobile.</sub><br/><br/>
       <code>Svelte 5</code> <code>SvelteKit</code> <code>PocketBase</code>
+    </td>
+    <td width="50%" valign="top">
+      <b>CS KMITL Mobile & Push Gateway</b> · <code>hub-api.cskmitl.com</code><br/>
+      <sub>Unified Android client paired with an SSE realtime proxy and Python FCM push notification relay.</sub><br/><br/>
+      <code>Kotlin</code> <code>Jetpack Compose</code> <code>Python</code> <code>FCM</code>
     </td>
   </tr>
   <tr>
@@ -65,26 +78,36 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
       <code>TypeScript</code> <code>OPNsense API</code> <code>OAuth 2.0</code>
     </td>
     <td width="50%" valign="top">
-      <b>CS KMITL Mobile & Push Gateway</b> · <code>hub-api.cskmitl.com</code><br/>
-      <sub>Unified Android client paired with an SSE realtime proxy and Python FCM push notification relay.</sub><br/><br/>
-      <code>Kotlin</code> <code>Jetpack Compose</code> <code>Python</code> <code>FCM</code>
+      <b>Docs & Handover Repository</b> · <a href="https://github.com/CSNIS-CSKmitl/Docs"><code>CSNIS-CSKmitl/Docs ↗</code></a><br/>
+      <sub>Centralized architecture blueprints, deployment guides, and Thai handover documentation for all department systems.</sub><br/><br/>
+      <code>Markdown</code> <code>Documentation</code> <code>CI/CD</code>
     </td>
   </tr>
 </table>
 
 ---
 
-### Infrastructure & Network Operations
+### Infrastructure, Storage & Network Operations
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <b>Virtualization & Compute</b><br/>
-      <sub>Multi-node <b>Proxmox VE</b> cluster running KVM virtual machines and LXC containers for production apps and student workloads.</sub>
+      <sub>Multi-node <b>Proxmox VE</b> cluster running KVM virtual machines and LXC containers for production apps and student workloads with GPU passthrough.</sub>
     </td>
     <td width="50%" valign="top">
       <b>Network, Firewall & OpenVPN</b><br/>
       <sub><b>OPNsense</b> routing 10+ 802.1Q VLANs, NAT, Dnsmasq DNS/DHCP, Captive Portal, and <b>OpenVPN</b> remote access into internal VM subnets.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Storage & Department Cloud</b><br/>
+      <sub>Centralized <b>TrueNAS</b> storage pool paired with high-performance <b>Cloudreve</b> (migrated from Nextcloud for lightweight footprint, high throughput, and fast chunked transfers) for department file management.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <b>Reverse Proxy & Traffic Gateway</b><br/>
+      <sub>Production <b>Nginx</b> reverse proxy cluster managing SSL/TLS termination, HTTP/2, WebSocket multiplexing (JupyterHub / Web SSH consoles), and granular upstream proxying.</sub>
     </td>
   </tr>
   <tr>
@@ -94,7 +117,7 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
     </td>
     <td width="50%" valign="top">
       <b>CI/CD & Runtime</b><br/>
-      <sub>Self-hosted <b>GitHub Actions</b> Linux runners with automated build, SSH artifact delivery, and health-verified <b>PM2 / Docker</b> deployments behind <b>Nginx</b>.</sub>
+      <sub>Self-hosted <b>GitHub Actions</b> Linux runners with automated build, SSH artifact delivery, and health-verified <b>PM2 / Docker</b> deployments.</sub>
     </td>
   </tr>
 </table>
@@ -154,17 +177,15 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
 
 [![Proxmox VE](https://img.shields.io/badge/Proxmox_VE-18181b?style=flat&logo=proxmox&logoColor=E57000)](https://www.proxmox.com/)
 [![OPNsense](https://img.shields.io/badge/OPNsense-18181b?style=flat&logo=opnsense&logoColor=D94F00)](https://opnsense.org/)
+[![TrueNAS](https://img.shields.io/badge/TrueNAS-18181b?style=flat&logo=truenas&logoColor=0095D5)](https://www.truenas.com/)
+[![Nginx](https://img.shields.io/badge/Nginx-18181b?style=flat&logo=nginx&logoColor=009639)](https://nginx.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-18181b?style=flat&logo=jupyter&logoColor=F37626)](https://jupyter.org/)
+[![NVIDIA CUDA](https://img.shields.io/badge/NVIDIA_CUDA-18181b?style=flat&logo=nvidia&logoColor=76B900)](https://developer.nvidia.com/cuda-zone)
 [![OpenVPN](https://img.shields.io/badge/OpenVPN-18181b?style=flat&logo=openvpn&logoColor=EA7E20)](https://openvpn.net/)
 [![Grafana Loki](https://img.shields.io/badge/Grafana_Loki_&_Promtail-18181b?style=flat&logo=grafana&logoColor=F46800)](https://grafana.com/oss/loki/)
 [![Syslog-ng](https://img.shields.io/badge/Syslog--ng-18181b?style=flat&logo=linux&logoColor=FCC624)](https://www.syslog-ng.com/)
 [![PocketBase](https://img.shields.io/badge/PocketBase-18181b?style=flat&logo=pocketbase&logoColor=B8DBE4)](https://pocketbase.io/)
 [![PM2](https://img.shields.io/badge/PM2-18181b?style=flat&logo=pm2&logoColor=2B037A)](https://pm2.keymetrics.io/)
 [![Python](https://img.shields.io/badge/Python-18181b?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/)
-[![Java](https://img.shields.io/badge/Java-18181b?style=flat&logo=openjdk&logoColor=ED8B00)](https://openjdk.org/)
-[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-18181b?style=flat&logo=jetpackcompose&logoColor=4285F4)](https://developer.android.com/compose)
 
 </div>
-
-
-
-
