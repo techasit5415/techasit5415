@@ -19,6 +19,15 @@ I maintain the server cluster, firewall/network stack, storage infrastructure, a
 
 ---
 
+### Role & Responsibilities
+
+Founder and end-to-end owner of the CSNIS ecosystem — initiating the ideas, designing the architecture, building the platforms, and operating the infrastructure across networking, servers, web, mobile, and AI services.
+
+### Impact at a glance
+
+- End-to-end ownership of **10 production servers** and **1 GPU node** supporting department platforms and AI workloads.
+- Unified identity, data, deployment, observability, and network operations across the production ecosystem.
+
 ### CS KMITL / CSNIS Production Ecosystem
 
 All department platforms share a unified **PocketBase + KMITL OIDC** single sign-on core and run across our internal **Proxmox VE** cluster:
@@ -95,6 +104,41 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
     </td>
   </tr>
 </table>
+
+---
+
+### Architecture at a glance
+
+```mermaid
+flowchart TB
+    U[Students & Staff]
+
+    subgraph Services[CSNIS production services]
+        direction LR
+        VM[init.d<br/>VM and LXC self-service]
+        AI[AI Passport<br/>Web portal · API tokens · VRAM booking]
+        PR[Printer Server]
+        M[CS KMITL Mobile]
+        W[Web platforms<br/>Portal · Booking · Announcements]
+    end
+
+    subgraph Runtime[Dedicated runtime]
+        direction LR
+        PVE[Proxmox VE cluster<br/>10 production servers]
+        GPU[Ollama GPU node<br/>RTX A2000 · 12 GB VRAM]
+        CUPS[CUPS print service]
+    end
+
+    PB[PocketBase<br/>Shared auth · data · hooks]
+    SSO[KMITL IAM OIDC]
+
+    U --> Services
+    Services --> PB
+    PB <--> SSO
+    VM --> PVE
+    AI --> GPU
+    PR --> CUPS
+```
 
 ---
 
@@ -175,6 +219,12 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
     </td>
   </tr>
 </table>
+
+---
+
+### Contact
+
+[techasit2424@gmail.com](mailto:techasit2424@gmail.com) · [LinkedIn](https://www.linkedin.com/in/tvanit/)
 
 ---
 
