@@ -129,6 +129,18 @@ flowchart TB
         CUPS[CUPS print service]
     end
 
+    subgraph Storage[Storage]
+        direction LR
+        CLOUD[Cloudreve<br/>Department cloud]
+        NAS[TrueNAS<br/>NFS shared storage]
+        CLOUD --> NAS
+    end
+
+    subgraph Connectivity[Private connectivity]
+        direction LR
+        REMOTE[Remote access] --> TUNNEL[Rathole<br/>Secure tunnel] --> EDGE[OPNsense<br/>Firewall · VLAN · VPN routing]
+    end
+
     PB[PocketBase<br/>Shared auth · data · hooks]
     SSO[KMITL IAM OIDC]
 
@@ -158,11 +170,11 @@ flowchart TB
   <tr>
     <td width="50%" valign="top">
       <b>Storage & Department Cloud</b><br/>
-      <sub>Centralized <b>TrueNAS</b> storage pool paired with high-performance <b>Cloudreve</b> (migrated from Nextcloud for lightweight footprint, high throughput, and fast chunked transfers) for department file management.</sub>
+      <sub>Centralized <b>TrueNAS</b> storage exported over <b>NFS</b> and paired with high-performance <b>Cloudreve</b> (migrated from Nextcloud for lightweight footprint, high throughput, and fast chunked transfers) for department file management.</sub>
     </td>
     <td width="50%" valign="top">
       <b>Reverse Proxy & Traffic Gateway</b><br/>
-      <sub>Production <b>Nginx</b> reverse proxy cluster managing SSL/TLS termination, HTTP/2, WebSocket multiplexing (JupyterHub / Web SSH consoles), and granular upstream proxying.</sub>
+      <sub>Production <b>Nginx</b> reverse proxy cluster managing SSL/TLS termination, HTTP/2, WebSocket multiplexing (JupyterHub / Web SSH consoles), granular upstream proxying, and <b>Rathole</b> secure tunnels for private remote access.</sub>
     </td>
   </tr>
   <tr>
