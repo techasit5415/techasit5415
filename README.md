@@ -8,6 +8,7 @@
 [![CSNIS Portal](https://img.shields.io/badge/csnis.cskmitl.com-18181b?style=flat&logo=svelte&logoColor=FF3E00)](https://csnis.cskmitl.com)
 [![init.d](https://img.shields.io/badge/init--d.cskmitl.com-18181b?style=flat&logo=proxmox&logoColor=E57000)](https://init-d.cskmitl.com)
 [![CS Colab](https://img.shields.io/badge/colab.cskmitl.com-18181b?style=flat&logo=jupyter&logoColor=F37626)](https://colab.cskmitl.com)
+[![AI Passport](https://img.shields.io/badge/aipass.cskmitl.com-18181b?style=flat&logo=openai&logoColor=white)](https://aipass.cskmitl.com)
 [![CS KMITL](https://img.shields.io/badge/CS_KMITL-E35205?style=flat)](https://www.cs.kmitl.ac.th/)
 
 </div>
@@ -66,21 +67,31 @@ All department platforms share a unified **PocketBase + KMITL OIDC** single sign
       <code>Svelte 5</code> <code>SvelteKit</code> <code>PocketBase</code>
     </td>
     <td width="50%" valign="top">
-      <b>CS KMITL Mobile & Push Gateway</b> · <code>hub-api.cskmitl.com</code><br/>
+      <b><a href="https://github.com/CSNIS-CSKmitl/android-cskmitl">CS KMITL Mobile</a> & Push Gateway</b> · <code>hub-api.cskmitl.com</code><br/>
       <sub>Unified Android client paired with an SSE realtime proxy and Python FCM push notification relay.</sub><br/><br/>
       <code>Kotlin</code> <code>Jetpack Compose</code> <code>Python</code> <code>FCM</code>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <b><a href="https://github.com/CSNIS-CSKmitl/Ai-passport">AI Passport</a></b> · <a href="https://aipass.cskmitl.com"><code>aipass.cskmitl.com ↗</code></a><br/>
+      <sub>AI access platform with KMITL OIDC, GPU-backed local LLM inference, per-user quotas, and time-slot reservations.</sub><br/><br/>
+      <code>SvelteKit</code> <code>Ollama</code> <code>NVIDIA GPU</code> <code>PocketBase</code>
+    </td>
+    <td width="50%" valign="top">
       <b><a href="https://github.com/techasit5415/AuthWeb">AuthWeb</a></b> · <code>Captive Portal</code><br/>
       <sub>KMITL WiFi authentication portal with Google OAuth and automated voucher generation via the OPNsense API.</sub><br/><br/>
       <code>TypeScript</code> <code>OPNsense API</code> <code>OAuth 2.0</code>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <b>Docs & Handover Repository</b> · <a href="https://github.com/CSNIS-CSKmitl/Docs"><code>CSNIS-CSKmitl/Docs ↗</code></a><br/>
       <sub>Centralized architecture blueprints, deployment guides, and Thai handover documentation for all department systems.</sub><br/><br/>
       <code>Markdown</code> <code>Documentation</code> <code>CI/CD</code>
+    </td>
+    <td width="50%" valign="top">
+      &nbsp;
     </td>
   </tr>
 </table>
